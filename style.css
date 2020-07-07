@@ -1,0 +1,65 @@
+/* uppgift 1 */
+
+#box {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 10px;
+}
+
+#box2 {
+    grid-column: span 2;
+}
+
+.box3 {
+    background: #080808;
+    color: white;
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+/* uppgift 2 */
+
+#box10 {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
+    padding-top: 100px;
+}
+
+#box11, #box12 {
+    grid-column: span 2;
+}
+
+/* uppgift 3 */
+
+#box20 {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
+    padding-top: 100px;
+}
+
+#box21 {
+    grid-column: span 3;
+}
+
+#box22 {
+    grid-row: span 2;
+}
+
+/* uppgift 4 */
+
+@media (max-width: 40em) {
+    #box20 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+    }
+    #box21 {
+        grid-column: span 1;
+    }
+    #box22 {
+        grid-row: span 1;
+    }
+}
